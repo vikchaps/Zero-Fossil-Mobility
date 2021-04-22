@@ -25,6 +25,7 @@ The third parameter is the vehicle mass.
 2 Figures are generated :
 
 Fig1 : The energy used per unit of distance Ef/d versus the speed in km/h
+
 Fig2 : The power needed versus the speed in km/h
 
 On this first example you will obtain that a typical vehicle (thermal one) of mass 1000 kg needs 500Wh/km or 5L/100km of fuel at 100km/h and a power of 15000 W.
