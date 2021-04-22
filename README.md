@@ -5,6 +5,10 @@ ISAE-SUPAERO Course related to these developmements : https://lms.isae.fr/course
 
 ISAE-SUPAERO Zero Fossil-Fuel Mobility Project : SolarBoost Web Site : www.solarboost.fr
 
+Energetic performances of various mobility systems obtain with this very simple software is given in the Figure below:
+
+<img width="1048" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115713843-bef30c80-a376-11eb-8494-61eeb8528bc5.png">
+
 # Aim of OdG.m
 
 To compute order of magnitude of energy, power, battery size, etc is needed for any Terrestrial Vehicles (Cars, Bikes, Velomobile, ...) to move at a given speed.
