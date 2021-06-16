@@ -1,5 +1,5 @@
 
-# Mobility-Climate-Change
+# Mobility and Climate Change
 
 ISAE-SUPAERO Course Physics of Order of Magnitude in a transition world : https://lms.isae.fr/course/view.php?id=2978
 
@@ -11,7 +11,7 @@ Energetic performances of various mobility systems obtained with this very simpl
 
 # Aim of OdG.m
 
-To compute order of magnitude of energy, power, battery size, etc is needed for any Terrestrial Vehicles (Cars, Bikes, Velomobile, ...) to move at a given speed.
+To compute order of magnitude of energy, power, battery size, ... for any Terrestrial Vehicles (Cars, Bikes, Velomobile, ...) to move at a given speed.
 
 # Running
 
@@ -19,13 +19,13 @@ To use this code, you just need to have MATLAB or an opensource version like Oct
 
 # Example
 
-You want to compute the order of magnitude energy and power of a vehicle of mass 1000 kg :
+You want to compute the energy and power needed on a flat road (slope =0%) without wind (Vw=0km/h) for a vehicle of mass 1000 kg :
 
 OdG(0,0,1000);
 
 The first 0 is for road slope in % (a road of length 1000 meters and climbing 100 meters will have a slope p=10%=0.1).
-The second 0 is for wind speed if any.
-The third parameter is the vehicle mass.
+The second 0 is for wind speed in km/h if any.
+The third parameter is the vehicle mass in kg.
 
 2 Figures are generated :
 
