@@ -47,7 +47,7 @@ EV car      : m=1300kg, SCd=1m2, mu=0.013, eta=0.9
 
 Both cars have same aerodynamic and rolling friction parameters (SCd,mu) but a higher mass is typical for EV (battery heavier than fuel) and the engine efficiency is typically 0.3 for thermal cars and 0.9 for EV.
 
-Hence you see that the power needed is a little higher on EV but the energy consumption is nearly 3 times lower with 200Wh/km for the EV and 550Wh/km for a thermal vehicle (5.5L/100km).
+The power needed is a little higher on EV because it is heavier here but the energy consumption is nearly 3 times lower with 200Wh/km for the EV and 550Wh/km for a thermal vehicle (5.5L/100km) because its engine efficiency is higher. EV consumes less energy and produce very low CO2 emissions compared to a thermal car.
 
 <img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png"> <img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712967-bf3ed800-a375-11eb-9c65-5bb8c94907f5.png">
 
