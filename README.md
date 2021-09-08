@@ -51,3 +51,16 @@ The power needed is a little higher on EV because it is heavier here but the ene
 
 <img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png"> <img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712967-bf3ed800-a375-11eb-9c65-5bb8c94907f5.png">
 
+To compare an electric car with a 40kWh or 60kWh batteries knowing that the specific weight of Li-Ion battery is 200Wh/kg :
+
+OdG(0,0,1500,1,0.013,0.9,40000); OdG(0,0,1600,1,0.013,0.9,60000);
+
+EV 40kWh : m=1500kg, SCd=1m2, mu=0.013, eta=0.9
+EV 60kWh : m=1600kg, SCd=1m2, mu=0.013, eta=0.9
+
+Both cars have same aerodynamic and rolling friction parameters (SCd,mu).
+
+...
+
+<img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png">
+
