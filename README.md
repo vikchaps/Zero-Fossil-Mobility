@@ -37,8 +37,7 @@ Fig2 : The power needed versus the speed in km/h
 On this first example you will obtain that a typical vehicle (thermal one) of mass 1000 kg needs 500Wh/km or 5L/100km of fuel at 100km/h and a power of 15000 W.
 
 <img width="400" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png">
-![P](https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png)
-![P2](https://user-images.githubusercontent.com/18681171/115712480-1bedc300-a375-11eb-8d27-cb92293b85c8.png)
+<img width="400" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712480-1bedc300-a375-11eb-8d27-cb92293b85c8.png">
 
 If you want to compare a typical thermal car and an electric car :
 
