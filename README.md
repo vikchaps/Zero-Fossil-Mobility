@@ -62,5 +62,5 @@ Both cars have same aerodynamic and rolling friction parameters (SCd,mu).
 
 ...
 
-<img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png">
+<img width="500" alt="OdG_MT" src="https://github.com/vikchaps/Zero-Fossil-Mobility/blob/main/EV_2batt.png">
 
