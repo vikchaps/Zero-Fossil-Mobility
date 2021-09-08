@@ -5,7 +5,7 @@ ISAE-SUPAERO Course Physics of Order of Magnitude in a transition world : https:
 
 ISAE-SUPAERO Zero Fossil-Fuel Mobility Project : SolarBoost Web Site : www.solarboost.fr
 
-Energetic performances of various mobility systems obtained with this very simple software is given in the Figure below:
+Energetic performances of various vehicles obtained with this simple software is given in the Figure below:
 
 <img width="1048" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115713843-bef30c80-a376-11eb-8494-61eeb8528bc5.png">
 
@@ -23,9 +23,10 @@ You want to compute the energy and power needed on a flat road (slope =0%) witho
 
 OdG(0,0,1000);
 
-The first 0 is for road slope in % (a road of length 1000 meters and climbing 100 meters will have a slope p=10%=0.1).
-The second 0 is for wind speed in km/h if any.
+The first 0 is the flat road slope in % (a road of length 1000 meters and climbing 100 meters will have a slope p=10%=0.1).
+The second 0 is the wind speed in km/h.
 The third parameter is the vehicle mass in kg.
+Other parameters are typical values for thermal vehicle.
 
 2 Figures are generated :
 
@@ -35,6 +36,7 @@ Fig2 : The power needed versus the speed in km/h
 
 On this first example you will obtain that a typical vehicle (thermal one) of mass 1000 kg needs 500Wh/km or 5L/100km of fuel at 100km/h and a power of 15000 W.
 
+<img width="400" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png">
 ![P](https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png)
 ![P2](https://user-images.githubusercontent.com/18681171/115712480-1bedc300-a375-11eb-8d27-cb92293b85c8.png)
 
