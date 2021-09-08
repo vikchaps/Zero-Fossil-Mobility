@@ -34,22 +34,20 @@ Fig1 : The energy used per unit of distance Ef/d versus the speed in km/h
 
 Fig2 : The power needed versus the speed in km/h
 
-On this first example you will obtain that a typical vehicle (thermal one) of mass 1000 kg needs 500Wh/km or 5L/100km of fuel at 100km/h and a power of 15000 W.
+Hence, a typical thermal vehicle of mass 1000 kg needs 500Wh/km of energy or 5L/100km of fuel at 100km/h and a power of 15000 Watt.
 
 <img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png"> <img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712480-1bedc300-a375-11eb-8d27-cb92293b85c8.png">
 
-If you want to compare a typical thermal car and an electric car :
+If you want to compare a thermal car and an electric car :
 
-OdG(0,0,1000,1,0.013,0.3);
-OdG(0,0,1300,1,0.013,0.9);
+OdG(0,0,1000,1,0.013,0.3); OdG(0,0,1300,1,0.013,0.9);
 
 Thermal car : m=1000kg, SCd=1m2, mu=0.013, eta=0.3
-
 EV car      : m=1300kg, SCd=1m2, mu=0.013, eta=0.9
 
 Both cars have same aerodynamic and rolling friction parameters (SCd,mu) but a higher mass is typical for EV (battery heavier than fuel) and the engine efficiency is typically 0.3 for thermal cars and 0.9 for EV.
 
 Hence you see that the power needed is a little higher on EV but the energy consumption is nearly 3 times lower with 200Wh/km for the EV and 550Wh/km for a thermal vehicle (5.5L/100km).
 
-![E12](https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png)
-![E11](https://user-images.githubusercontent.com/18681171/115712967-bf3ed800-a375-11eb-9c65-5bb8c94907f5.png)
+<img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png"> <img width="500" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712967-bf3ed800-a375-11eb-9c65-5bb8c94907f5.png">
+
