@@ -30,9 +30,9 @@ Other parameters are typical values for thermal vehicle.
 
 2 Figures are generated :
 
-Fig1 : The energy used per unit of distance Ef/d versus the speed in km/h
+Fig1 : The power needed versus the speed in km/h
 
-Fig2 : The power needed versus the speed in km/h
+Fig2 : The energy used per unit of distance Ef/d versus the speed in km/h
 
 Hence, a typical thermal vehicle of mass 1000 kg needs 500Wh/km of energy or 5L/100km of fuel at 100km/h and a power of 15000 Watt.
 
