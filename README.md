@@ -59,7 +59,7 @@ Fig1 : The power needed versus the speed in km/h
 
 Fig2 : The energy used per unit of distance Ef/d versus the speed in km/h
 
-Hence, a typical thermal car of mass 1000 kg needs 500Wh/km of energy or 5L/100km of fuel at 100km/h and a power of 15 000 Watt.
+Hence, a typical thermal car of mass 1000 kg needs **500Wh/km* of energy or **5L/100km** of fuel at 100km/h and a power of 15 000 Watt.
 
 <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png"> <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712480-1bedc300-a375-11eb-8d27-cb92293b85c8.png">
 
@@ -85,19 +85,19 @@ EV 40kWh : m=1500kg, SCd=1m2, mu=0.013, eta=0.9
 
 EV 60kWh : m=1600kg, SCd=1m2, mu=0.013, eta=0.9
 
-Both cars have same aerodynamic and rolling friction parameters (SCd,mu).
+Both cars have same aerodynamic and rolling friction parameters (SCd,mu)
 
-At 100km/h, the EV with 40kWh has a range 200km and the other one with 60kWh has 290km.
+At 100km/h, the EV with 40kWh has a range **200km** and the other one with 60kWh has **290km**
 
 <img width="300" alt="OdG_MT" src="https://github.com/vikchaps/Zero-Fossil-Mobility/blob/main/EV_2batt.png">
 
-** Evaluate VAE range at 25km/h with a 500Wh battery on a flat road (p=0%) or on a road of slope (p=3%)**
+**Evaluate VAE range at 25km/h with a 500Wh battery on a flat road (p=0%) or on a road of slope (p=3%)**
 
 OdG(0,80+20,0.4,0.006,0.9,500);OdG(0.03,80+20,0.4,0.006,0.9,500);
 
-A VAE with a 500Wh battery will have a range of 90km on a flat road (p=0%).
+A VAE with a 500Wh battery will have a range of **90km** on a flat road (p=0%)
 
-A VAE with a 500Wh battery will have a range of 30km on a road of slope p=3%
+A VAE with a 500Wh battery will have a range of **30km** on a road of slope p=3%
 
 
 
