@@ -91,9 +91,7 @@ At 100km/h, the EV with 40kWh has a range **200km** and the other one with 60kWh
 
 OdG(0,80+20,0.4,0.006,0.9,500);OdG(0.03,80+20,0.4,0.006,0.9,500);
 
-A VAE with a 500Wh battery will have a range of **90km** on a flat road (p=0%)
-
-A VAE with a 500Wh battery will have a range of **30km** on a road of slope p=3%
+A VAE with a 500Wh battery will have a range of **90km** on a flat road (p=0%) or **30km** on a road of slope p=3%.
 
 
 
