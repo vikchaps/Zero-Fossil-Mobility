@@ -3,7 +3,7 @@
 
 V.G. Chapin, Order of Magnitude Physics in a transition world, ISAE-SUPAERO Course : https://lms.isae.fr/course/view.php?id=2978
 
-ISAE-SUPAERO Zero Fossil-Fuel Mobility Project : SolarBoost Web Site : www.solarboost.fr
+SolarBoost, a Zero Fossil-Fuel Mobility Project, ISAE-SUPAERO, www.solarboost.fr
 
 Energetic performances of various vehicles obtained with this simple software is given in the Figure below:
 
