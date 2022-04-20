@@ -55,7 +55,7 @@ OdG(0,1000);
 The first number is the flat road slope in % (a road of length 1000 meters and climbing 100 meters will have a slope p=10%=0.1).
 The second number is the vehicle mass in kg. Other unspecified parameters will have typical values for thermal car (default values).
 
-2 Figures are generated : Fig1 represent the power versus the speed in km/h, Fig2 represent the energy used per unit of distance Ef/d in Wh/km versus the speed in km/h. A typical thermal car of mass 1000 kg needs 8400 Watt and **350Wh/km* of energy or **3.5L/100km** of fuel at 80km/h but the same car needs 29 000 Watt and **740Wh/km** of energy or **7.4L/100km** of fuel at 130km/h.
+2 Figures are generated : Fig1 represent the power versus the speed in km/h, Fig2 represent the energy used per unit of distance Ef/d in Wh/km versus the speed in km/h. A typical thermal car of mass 1000 kg needs 8400 Watt and **350Wh/km** of energy or **3.5L/100km** of fuel at 80km/h but the same car needs 29 000 Watt and **740Wh/km** of energy or **7.4L/100km** of fuel at 130km/h.
 
 <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png"> <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712480-1bedc300-a375-11eb-8d27-cb92293b85c8.png">
 
