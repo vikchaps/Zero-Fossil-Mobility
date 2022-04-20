@@ -17,18 +17,30 @@ To compute order of magnitude of energy, power, battery size, ... for any Terres
 
 To run this code, you just need to have MATLAB or an opensource version of it like Octave.
 Syntax is as follow: [Efsd,P] = OdG(p,m,SCd,mu,eta,eb,Ppv,Vmax,Pmax,name)
+
 With :
 Efsd  the energy efficiency [Wh/km]
+
 P     the power consumption [W]
+
 p     the road slope [%]
+
 m     the mass [kg]
+
 SCd   the aerodynamic area [m2]
+
 mu    the friction coefficient (tire on road)
+
 eta   the engine efficiency
+
 eb    the energy contained in the reservoir [Wh]
+
 Ppv   the power of photovoltaïc cells installed [W]
+
 Vmax  the range of speed considered for figures [km/h]
+
 Pmax  the range of power considered for figures [W]
+
 name  the name for legends on figures
 
 # Example
