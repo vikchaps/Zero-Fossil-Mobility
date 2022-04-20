@@ -51,11 +51,12 @@ You want to compute the energy and power needed on a flat road (slope =0%) for a
 OdG(0,1000);
 
 The first number is the flat road slope in % (a road of length 1000 meters and climbing 100 meters will have a slope p=10%=0.1).
-The second number is the vehicle mass in kg.
-Other non-specified parameters will be typical values for thermal car.
+The second number is the vehicle mass in kg. Other unspecified parameters will have typical values for thermal car (default values).
 
 2 Figures are generated :
+
 Fig1 : The power needed versus the speed in km/h
+
 Fig2 : The energy used per unit of distance Ef/d versus the speed in km/h
 
 Hence, a typical thermal car of mass 1000 kg needs 500Wh/km of energy or 5L/100km of fuel at 100km/h and a power of 15 000 Watt.
@@ -66,8 +67,9 @@ Hence, a typical thermal car of mass 1000 kg needs 500Wh/km of energy or 5L/100k
 
 OdG(0,1000,1,0.013,0.3); OdG(0,1300,1,0.013,0.9);
 
-Thermal car : m=1000kg, SCd=1m2, mu=0.013, eta=0.3
-EV car      : m=1300kg, SCd=1m2, mu=0.013, eta=0.9
+**Thermal car** : m=1000kg, SCd=1m2, mu=0.013, eta=0.3
+
+**EV car**      : m=1300kg, SCd=1m2, mu=0.013, eta=0.9
 
 Both cars have same aerodynamic and rolling friction parameters (SCd,mu) but a higher mass is typical for EV (battery are heavier than fossil fuel) and the engine efficiency is typically 0.3 for thermal cars and 0.9 for EV.
 
@@ -75,11 +77,12 @@ The power needed is a little higher on EV because it is heavier but the final en
 
 <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png"> <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712967-bf3ed800-a375-11eb-9c65-5bb8c94907f5.png">
 
-#To compare an electric car with a 40kWh or 60kWh batteries knowing that the specific weight of Li-Ion battery is 200Wh/kg :
+**To compare an electric car with a 40kWh or 60kWh batteries** knowing that the specific weight of Li-Ion battery is 200Wh/kg :
 
 OdG(0,1500,1,0.013,0.9,40000); OdG(0,1600,1,0.013,0.9,60000);
 
 EV 40kWh : m=1500kg, SCd=1m2, mu=0.013, eta=0.9
+
 EV 60kWh : m=1600kg, SCd=1m2, mu=0.013, eta=0.9
 
 Both cars have same aerodynamic and rolling friction parameters (SCd,mu).
@@ -87,4 +90,14 @@ Both cars have same aerodynamic and rolling friction parameters (SCd,mu).
 At 100km/h, the EV with 40kWh has a range 200km and the other one with 60kWh has 290km.
 
 <img width="300" alt="OdG_MT" src="https://github.com/vikchaps/Zero-Fossil-Mobility/blob/main/EV_2batt.png">
+
+** Evaluate VAE range at 25km/h with a 500Wh battery on a flat road (p=0%) or on a road of slope (p=3%)**
+
+OdG(0,80+20,0.4,0.006,0.9,500);OdG(0.03,80+20,0.4,0.006,0.9,500);
+
+A VAE with a 500Wh battery will have a range of 90km on a flat road (p=0%).
+
+A VAE with a 500Wh battery will have a range of 30km on a road of slope p=3%
+
+
 
