@@ -1,7 +1,7 @@
 
 # Mobility and Climate Change
 
-ISAE-SUPAERO Course Physics of Order of Magnitude in a transition world : https://lms.isae.fr/course/view.php?id=2978
+V.G. Chapin, Order of Magnitude Physics in a transition world, ISAE-SUPAERO Course : https://lms.isae.fr/course/view.php?id=2978
 
 ISAE-SUPAERO Zero Fossil-Fuel Mobility Project : SolarBoost Web Site : www.solarboost.fr
 
