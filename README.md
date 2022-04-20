@@ -46,9 +46,9 @@ With :
 
 **name**  the name for legends on figures
 
-# Example
+# Examples
 
-You want to compute the energy and power needed on a flat road (slope =0%) for a typical car of mass 1000 kg :
+**Typical thermal car consumption** You want to compute the energy and power needed on a flat road (slope =0%) for a typical car of mass 1000 kg :
 
 OdG(0,1000);
 
@@ -65,7 +65,7 @@ Hence, a typical thermal car of mass 1000 kg needs **500Wh/km* of energy or **5L
 
 <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712458-14c6b500-a375-11eb-8f61-bcd449094c12.png"> <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712480-1bedc300-a375-11eb-8d27-cb92293b85c8.png">
 
-#If you want to compare a thermal and electric cars :
+**Compare thermal and electric cars** :
 
 OdG(0,1000,1,0.013,0.3); OdG(0,1300,1,0.013,0.9);
 
@@ -79,7 +79,7 @@ The power needed is a little higher on EV because it is heavier but the final en
 
 <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712954-b9e18d80-a375-11eb-9bbe-3122fa06c10a.png"> <img width="300" alt="OdG_MT" src="https://user-images.githubusercontent.com/18681171/115712967-bf3ed800-a375-11eb-9c65-5bb8c94907f5.png">
 
-**To compare an electric car with a 40kWh or 60kWh batteries** knowing that the specific weight of Li-Ion battery is 200Wh/kg :
+**Compare electric car with a 40kWh or 60kWh battery pack** knowing that the specific weight of Li-Ion battery is 200Wh/kg :
 
 OdG(0,1500,1,0.013,0.9,40000); OdG(0,1600,1,0.013,0.9,60000);
 
