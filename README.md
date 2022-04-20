@@ -1,7 +1,7 @@
 
 # Energy Efficient Mobility (bike, car, truck, ...) for Climate Change
 
-OdG.m is a Matlab code to compute power consumption and energy use of various terrestrial mobility systems like (bike, vae, stand-up scooter, cars, trucks, ...). It has been developed for the course : V.G. Chapin & C. Leonard, Order of Magnitude Physics in a transition world, ISAE-SUPAERO Course : https://lms.isae.fr/course/view.php?id=2978
+OdG.m is a Matlab code to compute power consumption and energy use of various terrestrial mobility systems like (bike, vae, stand-up scooter, cars, trucks, ...). It has been developed for the course : V.G. Chapin & C. Leonard, **Order of Magnitude Physics in a transition world**, ISAE-SUPAERO Course : https://lms.isae.fr/course/view.php?id=2978
 
 SolarBoost, a Zero Fossil-Fuel Mobility Project, ISAE-SUPAERO, www.solarboost.fr
 
