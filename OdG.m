@@ -15,7 +15,7 @@ function [Efsd,P]= OdG(p,m,SCd,mu,eta,eb,Ppv,Vmax,Pmax,name)
 % P     [W]     power consumption
 
 if nargin == 1 % typical thermal car
-    m=1500;SCd=1.8*1.6*0.3;mu=0.013;eta=0.3;eb=0;Ppv=0;Vmax=130;Pmax=inf;name='Typical Thermal car';
+    m=1500;SCd=1.8*1.6*0.3;mu=0.013;eta=0.3;eb=0;Ppv=0;Vmax=130;Pmax=inf;name='';
 end
 if nargin == 2
     SCd=1.8*1.6*0.3;mu=0.013;eta=0.3;eb=0;Ppv=0;Vmax=130;Pmax=inf;name='Typical Thermal car';
@@ -53,37 +53,45 @@ V = linspace(0,Vmax,2*(Vmax+1))/3.6; % [m/s]
 
 t       = 1./(V.*3.6); % V in m/s, t in hours
 
+Ppvv    = Ppv .* ones(1,length(V));
+
+Ppvv    = 0.8*Ppvv;    % Pertes electriques
+
 for i = 1 : length(V)
     Pr     = mu*m*g.*V;                 % Rolling     Power
     Pa     = 0.5*rho*V.^3.*SCd;         % Aerodynamic Power
     Pg     = p*m*g.*V;                  % Gravity     Power
     P      = Pr + Pa + Pg;              % Mechanical  Power consumption
-    Pe     = P/eta;                     % Total       Power consumption
-    Efsd   = max((Pe-Ppv),0).*t;        % Energy consumption (stock-flux)
+    Pe     = P/eta;                     % Effective   Power consumption
+    Ph     = Pe - Ppvv;                 % Human       Power consumption
+    Efsd   = max(Pe,0).*t;              % Total       Energy consumption (stock-flux)
+    Efhsd  = max(Ph,0).*t;              % Human       Energy consumption (stock-flux)
     Range  = eb ./ Efsd;                % Autonomie
     %if eta>0.7 then % EV si eta>0.7
-        kg     = eb/Epsb ./ Range * 100;    % kg batt. / 100km
+    kg     = eb/Epsb ./ Range * 100;    % kg batt. / 100km
     %else            % Th si eta<0.7
     %    L100   = eb/12000 ./ Range * 100;   % L/100km
     %end
 end
 
 % Take only elements that have P<Pmax
-iend = max(find(P<Pmax));
-P    = mink(P    ,iend);
-V    = mink(V    ,iend);
-Efsd = mink(Efsd ,iend);
-Range= maxk(Range,iend);
-kg   = mink(kg   ,iend);
+iend  = max(find(Ph<Pmax));
+Ph    = mink(Ph    ,iend);
+V     = mink(V     ,iend);
+Efhsd = mink(Efhsd ,iend);
+Range = maxk(Range ,iend);
+kg    = mink(kg    ,iend);
 
-% Plot Fig 1 Ef/d   = f(V)
-x=V*3.6; y=Efsd;
-figure(1);plot(x,y,'linewidth',2);hold on;xlabel('V [km/h]');ylabel('Ef/d [Wh/km]');text(x(end),y(end),name);grid on;%legend(name);
-% Plot Fig 2 P/pass = f(V)
+% Plot Fig P/pass = f(V)
 %if nargout == 2 % Power fig is required
-figure(2);plot(V*3.6,P,'linewidth',2);hold on;xlabel('V [km/h]');ylabel('P [W]');grid on;
+figure(1);plot(V*3.6,Ph,'linewidth',2);hold on;xlabel('V [km/h]');ylabel('Ph [W]');grid on;
 %end
-% Plot Fig 2 Range = f(V)
+
+% Plot Fig Ef/d   = f(V)
+x=V*3.6; y=Efhsd;
+figure(2);plot(x,y,'linewidth',2);hold on;xlabel('V [km/h]');ylabel('Efh/d [Wh/km]');text(x(end),y(end),name);grid on;%legend(name);
+
+% Plot Fig Range = f(V)
 if not(eb==0) % eb is given, Range may be computed
 figure(3);plot(V*3.6,Range,'linewidth',2);hold on;xlabel('V [km/h]');ylabel('Range [km]');
 end
