@@ -1,5 +1,5 @@
 
-# Energy Efficient Mobility (bike, vae, trike, car, truck, ...) for Climate Change
+# Frugal Mobility (bike, vae, trike, car, truck, ...) for Climate Change
 
 OdG.m is a Matlab code to compute power consumption and energy use of various terrestrial mobility systems like (bike, vae, stand-up scooter, cars, trucks, ...). It has been developed for the following course : 
 
